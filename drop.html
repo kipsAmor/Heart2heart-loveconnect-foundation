@@ -1,0 +1,15 @@
+<label for="resourceSelect">Get Involved</label>
+<select id="resourceSelect" onchange="navigateToLink(this)">
+  <option value="">-- Select an option --</option>
+  <option value="href="donate.php">donate</option>
+  <option value="Get Involved.php">volunteer</option>
+  
+</select>
+<script>
+  function navigateToLink(selectElement) {
+    const url = selectElement.value;
+    if (url) {
+      window.location.href = url;
+    }
+  }
+</script>
